@@ -1,0 +1,39 @@
+<apex:page standardController="opportunity" showHeader="false" sidebar="false" standardStylesheets="false">
+   <style>
+      .starWar{
+      border-radius: 0px 2px 2px 0px;
+      display: block;
+      width: 0%;
+      background-color: #fff;
+      height: 8px;
+      width: {!opportunity.Probability}%;
+      font-size:8px;
+      text-align: center;
+      }
+      .vader{
+      box-shadow:0px 0px 10px 1px #FD4275, 0 0 1px #FD4275, 0 0 1px #FD4275, 0 0 1px #FD4275, 0 0 1px #FD4275, 0 0 1px #FD4275, 0 0 1px #FD4275;
+      }
+      .yoda{
+      box-shadow:0px 0px 10px 1px #68B37A, 0 0 1px #68B37A, 0 0 1px #68B37A, 0 0 1px #68B37A, 0 0 1px #68B37A, 0 0 1px #68B37A, 0 0 1px #68B37A;
+      }
+      .obi{
+      box-shadow:0px 0px 10px 1px #3B8CF8, 0 0 1px #3B8CF8, 0 0 1px #3B8CF8, 0 0 1px #3B8CF8, 0 0 1px #3B8CF8, 0 0 1px #3B8CF8, 0 0 1px #3B8CF8;
+      }
+      .windu{
+      box-shadow:0px 0px 10px 1px #AC85B4, 0 0 1px #AC85B4, 0 0 1px #AC85B4, 0 0 1px #AC85B4, 0 0 1px #AC85B4, 0 0 1px #AC85B4, 0 0 1px #AC85B4;
+      }
+   </style>
+   <div>
+      <table style="border-spacing: 0px;width:100%;">
+         <tr>
+            <td style="width: 114px;">
+               <img src="{! $Resource.Sword }"/>
+            </td>
+            <td>
+               <!--Replace Class name below for different swords like : yoda,obi,windu-->
+               <span class="vader starWar" title="{!opportunity.Probability}%">{!opportunity.Probability}%</span>
+            </td>
+         </tr>
+      </table>
+   </div>
+</apex:page>
